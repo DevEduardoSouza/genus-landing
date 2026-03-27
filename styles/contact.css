@@ -25,90 +25,42 @@
   text-transform: none;
 }
 
-/* Form */
-.contact__form {
-  max-width: 55.556vw;
+/* Card */
+.contact__card {
+  border: 1px solid #000000;
+  padding: var(--space-2xl);
+  max-width: 35vw;
 }
 
-.contact__field {
-  margin-bottom: var(--space-2xl);
-}
-
-.contact__label {
-  display: block;
-  font-size: var(--text-sm);
+.contact__card-index {
+  font-size: var(--text-xs);
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-bottom: var(--space-sm);
+  opacity: 0.3;
+  margin-bottom: var(--space-lg);
 }
 
-.contact__label::before {
-  content: "[ ";
+.contact__card-title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
 }
 
-.contact__label::after {
-  content: " ]";
-}
-
-.contact__input,
-.contact__textarea {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px dotted #000000;
-  font-family: inherit;
-  font-size: var(--text-md);
+.contact__card-desc {
+  font-size: var(--text-base);
   font-weight: 400;
-  text-transform: uppercase;
+  line-height: 1.5;
+  text-transform: none;
   letter-spacing: 0.02em;
-  padding: var(--space-sm) 0;
-  outline: none;
-  transition: border-color 0.3s ease;
-  cursor: none;
-}
-
-.contact__input:focus,
-.contact__textarea:focus {
-  border-bottom-style: solid;
-  border-bottom-color: var(--color-accent);
-}
-
-.contact__textarea {
-  resize: vertical;
-  min-height: 8.333vw;
-  line-height: 1.4;
-}
-
-/* Checkbox */
-.contact__checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-sm);
+  opacity: 0.6;
   margin-bottom: var(--space-2xl);
 }
 
-.contact__checkbox input[type="checkbox"] {
-  width: var(--text-md);
-  height: var(--text-md);
-  flex-shrink: 0;
-  accent-color: #000000;
-  cursor: none;
-  margin-top: 0.1em;
-}
-
-.contact__checkbox-label {
-  font-size: var(--text-sm);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  text-transform: none;
-}
-
-/* Submit */
-.contact__submit {
+.contact__card-link {
+  display: inline-block;
   background: #000000;
   color: #ffffff;
-  border: none;
   font-family: inherit;
   font-size: var(--text-sm);
   font-weight: 500;
@@ -118,7 +70,10 @@
   transition: opacity 0.3s ease;
 }
 
-.contact__submit:hover {
+.contact__card-link::before { content: "[ "; }
+.contact__card-link::after { content: " ]"; }
+
+.contact__card-link:hover {
   opacity: 0.7;
 }
 
@@ -152,19 +107,12 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .contact__form {
+  .contact__card {
     max-width: 100%;
   }
 
   .contact__info {
     flex-direction: column;
     gap: var(--space-lg);
-  }
-}
-
-/* Small phone */
-@media (max-width: 480px) {
-  .contact__textarea {
-    min-height: 30vw;
   }
 }

@@ -1,5 +1,4 @@
 import PageTransition from "@/components/page-transition";
-import ContactForm from "@/components/contact-form";
 import "@/styles/contact.css";
 
 export default function ContactPage() {
@@ -13,24 +12,32 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <ContactForm />
+      <div className="contact__card">
+        <div className="contact__card-index">01</div>
+        <h2 className="contact__card-title">WhatsApp</h2>
+        <p className="contact__card-desc">
+          Envie uma mensagem direta e respondemos em até 24h.
+        </p>
+        <a
+          href="https://wa.me/557488359787"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact__card-link"
+        >
+          <span>Iniciar conversa</span>
+        </a>
+      </div>
 
       <div className="contact__info">
         <div className="contact__info-block">
-          <span className="contact__info-label">Email</span>
-          <a href="mailto:contato@genustech.com.br" className="contact__info-value">
-            contato@genustech.com.br
-          </a>
-        </div>
-        <div className="contact__info-block">
           <span className="contact__info-label">WhatsApp</span>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/557488359787"
             target="_blank"
             rel="noopener noreferrer"
             className="contact__info-value"
           >
-            +55 (00) 00000-0000
+            +55 (74) 8835-9787
           </a>
         </div>
         <div className="contact__info-block">
