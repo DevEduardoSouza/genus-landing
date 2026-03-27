@@ -161,6 +161,34 @@ export default function HomeGallery() {
         </div>
 
         <div className="home__spacer" />
+
+        {/* Team */}
+        <div className="home__team">
+          <h2 className="home__team-title">Equipe</h2>
+          <div className="home__team-grid">
+            <a href="https://linkedin.com/in/eduardo-souza-dev" target="_blank" rel="noopener noreferrer" className="home__team-member">
+              <div className="home__team-photo">
+                <img src="/team/eduardo.jpeg" alt="Eduardo Souza" />
+              </div>
+              <span className="home__team-name">Eduardo Souza</span>
+              <span className="home__team-role">Full Stack Developer</span>
+            </a>
+            <a href="https://linkedin.com/in/caioalves14" target="_blank" rel="noopener noreferrer" className="home__team-member">
+              <div className="home__team-photo">
+                <img src="/team/caiojpeg.jpeg" alt="Caio Alves" />
+              </div>
+              <span className="home__team-name">Caio Alves</span>
+              <span className="home__team-role">Developer</span>
+            </a>
+            <a href="https://linkedin.com/in/andesson-reis" target="_blank" rel="noopener noreferrer" className="home__team-member">
+              <div className="home__team-photo">
+                <img src="/team/andesson.jpeg" alt="Andesson Reis" />
+              </div>
+              <span className="home__team-name">Andesson Reis</span>
+              <span className="home__team-role">Developer</span>
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
