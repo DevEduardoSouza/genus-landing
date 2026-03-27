@@ -10,7 +10,7 @@ export default function Home() {
       </h1>
       <HomeLogo />
       <div className="home__scroll-hint">
-        <span>[↓]</span>
+        <span>[deslize]</span>
       </div>
       <HomeGallery />
     </main>
