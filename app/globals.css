@@ -12,7 +12,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-html,
+html {
+  overflow-x: clip;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
