@@ -123,6 +123,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .home__gallery {
+    padding-top: 100vh;
+  }
+
   .project-card--sm {
     width: 60vw;
   }
