@@ -150,3 +150,27 @@
     padding: 0 var(--space-md);
   }
 }
+
+/* Small phone */
+@media (max-width: 480px) {
+  .project-card--sm {
+    width: 80vw;
+  }
+
+  .project-card--md,
+  .project-card--lg {
+    width: 90vw;
+  }
+
+  .project-card--xl {
+    width: 95vw;
+  }
+
+  .home__spacer {
+    height: 20vh;
+  }
+
+  .home__spacer--lg {
+    height: 30vh;
+  }
+}

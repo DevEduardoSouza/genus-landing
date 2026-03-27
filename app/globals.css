@@ -143,6 +143,40 @@ ul, ol {
 }
 
 /* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.4vw;
+  }
+
+  :root {
+    --nav-height: 5vw;
+    --footer-height: 5vw;
+    --text-xs: 1.1vw;
+    --text-sm: 1.3vw;
+    --text-base: 1.5vw;
+    --text-md: 1.8vw;
+    --text-lg: 2.2vw;
+    --text-xl: 2.8vw;
+    --text-2xl: 3.5vw;
+    --text-3xl: 5vw;
+    --text-4xl: 7vw;
+    --text-5xl: 10vw;
+    --text-6xl: 14vw;
+    --text-hero: 60vw;
+    --space-xs: 1.2vw;
+    --space-sm: 1.8vw;
+    --space-md: 2.5vw;
+    --space-lg: 3.5vw;
+    --space-xl: 4.5vw;
+    --space-2xl: 6vw;
+    --space-3xl: 10vw;
+    --space-4xl: 14vw;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   body {
     font-size: 2.667vw;
@@ -171,5 +205,14 @@ ul, ol {
     --space-2xl: 8vw;
     --space-3xl: 13.333vw;
     --space-4xl: 20vw;
+  }
+}
+
+/* Small phone */
+@media (max-width: 480px) {
+  :root {
+    --nav-height: 14vw;
+    --footer-height: 14vw;
+    --text-hero: 85vw;
   }
 }

@@ -119,3 +119,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Small phone */
+@media (max-width: 480px) {
+  .about__stats {
+    grid-template-columns: 1fr;
+  }
+}

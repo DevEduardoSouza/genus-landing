@@ -161,3 +161,10 @@
     gap: var(--space-lg);
   }
 }
+
+/* Small phone */
+@media (max-width: 480px) {
+  .contact__textarea {
+    min-height: 30vw;
+  }
+}

@@ -141,3 +141,10 @@
     gap: var(--space-sm);
   }
 }
+
+/* Small phone */
+@media (max-width: 480px) {
+  .projects__filter {
+    gap: var(--space-xs);
+  }
+}

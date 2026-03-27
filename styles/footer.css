@@ -59,3 +59,10 @@
     gap: var(--space-md);
   }
 }
+
+/* Small phone */
+@media (max-width: 480px) {
+  .footer__right {
+    display: none;
+  }
+}
