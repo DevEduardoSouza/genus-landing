@@ -11,16 +11,14 @@ export default function Footer() {
       </div>
       <div className="footer__right">
         <ScrambleLink
-          href="https://github.com/genus-tech"
+          href="#"
           text="Github"
           className="footer__link"
-          external
         />
         <ScrambleLink
-          href="https://instagram.com/genus.tech"
+          href="#"
           text="Instagram"
           className="footer__link"
-          external
         />
         <ScrambleLink
           href="mailto:contato@genustech.com.br"
