@@ -109,6 +109,9 @@ export default function AboutPage() {
         <h2 className="about__team-title">Equipe</h2>
         <div className="about__team-grid">
           <div className="about__member">
+            <div className="about__member-photo">
+              <img src="/team/eduardo.jpeg" alt="Eduardo Souza" />
+            </div>
             <span className="about__member-index">01</span>
             <h3 className="about__member-name">Eduardo Souza</h3>
             <span className="about__member-role">Full Stack Developer</span>
@@ -122,6 +125,9 @@ export default function AboutPage() {
             </a>
           </div>
           <div className="about__member">
+            <div className="about__member-photo">
+              <img src="/team/caiojpeg.jpeg" alt="Caio Alves" />
+            </div>
             <span className="about__member-index">02</span>
             <h3 className="about__member-name">Caio Alves</h3>
             <span className="about__member-role">Developer</span>
@@ -135,6 +141,9 @@ export default function AboutPage() {
             </a>
           </div>
           <div className="about__member">
+            <div className="about__member-photo">
+              <img src="/team/andesson.jpeg" alt="Andesson Reis" />
+            </div>
             <span className="about__member-index">03</span>
             <h3 className="about__member-name">Andesson Reis</h3>
             <span className="about__member-role">Developer</span>
