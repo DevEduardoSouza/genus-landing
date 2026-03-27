@@ -42,6 +42,19 @@ export default function HomeGallery() {
     const cards = galleryRef.current?.querySelectorAll(".project-card");
     if (!cards) return;
 
+    const scrollHint = document.querySelector(".home__scroll-hint");
+    if (scrollHint) {
+      gsap.to(scrollHint, {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: document.body,
+          start: "top top",
+          end: "50px top",
+          scrub: true,
+        },
+      });
+    }
+
     cards.forEach((card) => {
       gsap.fromTo(
         card,

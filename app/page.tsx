@@ -9,6 +9,9 @@ export default function Home() {
         Genus Tech — Desenvolvimento de Software
       </h1>
       <HomeLogo />
+      <div className="home__scroll-hint">
+        <span>[scroll]</span>
+      </div>
       <HomeGallery />
     </main>
   );

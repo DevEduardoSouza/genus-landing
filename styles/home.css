@@ -112,6 +112,33 @@
   opacity: 0.5;
 }
 
+/* ===== SCROLL HINT ===== */
+.home__scroll-hint {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .home__scroll-hint {
+    display: block;
+    position: fixed;
+    bottom: var(--footer-height);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: var(--text-sm);
+    letter-spacing: 0.15em;
+    opacity: 0.4;
+    z-index: 3;
+    pointer-events: none;
+    animation: scrollHintBounce 2s ease-in-out infinite;
+  }
+}
+
+@keyframes scrollHintBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
 /* ===== SPACER ROWS ===== */
 .home__spacer {
   height: 30vh;
