@@ -21,8 +21,8 @@ export default function Footer() {
           className="footer__link"
         />
         <ScrambleLink
-          href="mailto:contato@genustech.com.br"
-          text="Email"
+          href="https://wa.me/557488359787"
+          text="Contato"
           className="footer__link"
           external
         />

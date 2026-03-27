@@ -13,7 +13,7 @@ export default function Navbar() {
       <nav className="navbar__nav">
         <ScrambleLink href="/about" text="Sobre" className="navbar__link" />
         <ScrambleLink href="/projects" text="Projetos" className="navbar__link" />
-        <ScrambleLink href="/contact" text="Contato" className="navbar__link" />
+        <ScrambleLink href="https://wa.me/557488359787" text="Contato" className="navbar__link" external />
       </nav>
     </header>
   );
