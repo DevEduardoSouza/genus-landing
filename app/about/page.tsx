@@ -104,6 +104,51 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+
+      <div className="about__team">
+        <h2 className="about__team-title">Equipe</h2>
+        <div className="about__team-grid">
+          <div className="about__member">
+            <span className="about__member-index">01</span>
+            <h3 className="about__member-name">Eduardo Souza</h3>
+            <span className="about__member-role">Full Stack Developer</span>
+            <a
+              href="https://linkedin.com/in/eduardo-souza-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__member-link"
+            >
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          <div className="about__member">
+            <span className="about__member-index">02</span>
+            <h3 className="about__member-name">Caio Alves</h3>
+            <span className="about__member-role">Developer</span>
+            <a
+              href="https://linkedin.com/in/caioalves14"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__member-link"
+            >
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          <div className="about__member">
+            <span className="about__member-index">03</span>
+            <h3 className="about__member-name">Andesson Reis</h3>
+            <span className="about__member-role">Developer</span>
+            <a
+              href="https://linkedin.com/in/andesson-reis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__member-link"
+            >
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     </PageTransition>
   );
