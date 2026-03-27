@@ -6,7 +6,12 @@ import "@/styles/loader.css";
 export default function Loader() {
   const [progress, setProgress] = useState(0);
   const [hidden, setHidden] = useState(false);
-  const [removed, setRemoved] = useState(false);
+  const [removed, setRemoved] = useState(() => {
+    if (typeof window !== "undefined") {
+      return sessionStorage.getItem("genus-loaded") === "1";
+    }
+    return false;
+  });
 
   const animateProgress = useCallback(() => {
     let current = 0;
@@ -16,7 +21,10 @@ export default function Loader() {
         current = 100;
         clearInterval(interval);
         setTimeout(() => setHidden(true), 300);
-        setTimeout(() => setRemoved(true), 800);
+        setTimeout(() => {
+          setRemoved(true);
+          sessionStorage.setItem("genus-loaded", "1");
+        }, 800);
       }
       setProgress(Math.min(current, 100));
     }, 80);
@@ -25,9 +33,10 @@ export default function Loader() {
   }, []);
 
   useEffect(() => {
+    if (removed) return;
     const cleanup = animateProgress();
     return cleanup;
-  }, [animateProgress]);
+  }, [animateProgress, removed]);
 
   if (removed) return null;
 
